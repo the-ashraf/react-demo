@@ -3,7 +3,8 @@ import { useTranslation } from "react-i18next";
 
 export default function Root() {
     const [ t, i18n ] = useTranslation();
-    const isArabic = i18n.language === 'ar'
+    const isArabic = i18n.language === 'ar';
+    document.body.dir = i18n.dir();
     return (
         <>
             <div className="grid min-h-screen grid-rows-[auto_1fr_auto] font-display text-secondary-500 antialiased relative bg-gray-50">
