@@ -1,27 +1,12 @@
-# React + TypeScript + Vite
+I built the pp from scratch, without using any starter templates. I installed React Router and added a few routes, as well as i18n-next to support multiple languages. I used a few translatable keys and made sure the layout has RTL support.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I used RTKQ to create an API slice to fetch the reservations list directly from the included Github gist. Finally, I used Tailwind CSS for all the styles.
 
-Currently, two official plugins are available:
+I noticed that the filter reservations scenario and the non-functional requirements section seemed to overlap. I interpreted this to mean that I should implement a filter box that filters all the columns showing in the table, using only the columns that were defined in the scenario. I believe this should be of value to the user.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### To Install
+```git clone https://github.com/the-ashraf/react-demo.git```
 
-## Expanding the ESLint configuration
+```npm install```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```npm run dev```
