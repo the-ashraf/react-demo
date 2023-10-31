@@ -27,4 +27,9 @@ i18n
         react: { useSuspense: false },
     });
 
+i18n.on("languageChanged", lng => {
+    document.documentElement.setAttribute("lang", lng);
+    document.documentElement.dir = lng === 'ar' ? "rtl" : "ltr";
+});
+
 export default i18n;

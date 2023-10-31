@@ -4,14 +4,12 @@ import { useTranslation } from "react-i18next";
 export default function Root() {
     const [ t, i18n ] = useTranslation();
     const isArabic = i18n.language === 'ar';
-    document.body.dir = i18n.dir();
-    document.documentElement.lang = i18n.language;
     return (
         <>
             <div className="grid min-h-screen grid-rows-[auto_1fr_auto] font-display text-secondary-500 antialiased relative bg-gray-50">
                 <header className="bg-emerald-900 text-white">
                     <div className="container mx-auto px-4 py-8 flex items-center justify-between">
-                        <span className="text-xl font-bold uppercase">Header</span>
+                        <span className="text-xl font-bold uppercase">{ t('logo') }</span>
                         <nav>
                             <ul className="flex items-center gap-4 font-bold text-lg">
                                 <li>

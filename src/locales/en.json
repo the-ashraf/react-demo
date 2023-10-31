@@ -1,4 +1,6 @@
 {
+  "logo": "Logo",
   "home": "Home",
-  "reservations": "Reservations"
+  "reservations": "Reservations",
+  "welcome": "Welcome to Emircom reservations center"
 }
