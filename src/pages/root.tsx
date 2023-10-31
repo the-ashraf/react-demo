@@ -5,7 +5,7 @@ export default function Root() {
     const [ t, i18n ] = useTranslation();
     const isArabic = i18n.language === 'ar';
     document.body.dir = i18n.dir();
-    document.html.lang = i18n.language;
+    document.documentElement.lang = i18n.language;
     return (
         <>
             <div className="grid min-h-screen grid-rows-[auto_1fr_auto] font-display text-secondary-500 antialiased relative bg-gray-50">
