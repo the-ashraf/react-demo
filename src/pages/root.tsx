@@ -25,7 +25,7 @@ export default function Root() {
                                         onClick={() => { i18n.changeLanguage(isArabic ? 'en' : 'ar') }}
                                         className="px-3 py-1 bg-white text-emerald-900 border border-emerald-900 rounded-md capitalize hover:bg-emerald-100 duration-150"
                                     >
-                                        { isArabic ? 'ع' : 'en'}
+                                        { isArabic ? 'en' : 'ع'}
                                     </button>
                                 </li>
                             </ul>
