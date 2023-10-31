@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import Root from "./pages/root.tsx";
-import Index from "./pages/index.tsx";
-import Reservations from "@/pages/reservations/index.tsx";
+import Root from "./features/root.tsx";
+import Index from "./features/index.tsx";
+import Reservations from "@/features/reservations/index.tsx";
 
 function App() {
   return (
