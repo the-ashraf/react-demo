@@ -1,4 +1,4 @@
-I built the pp from scratch, without using any starter templates. I installed React Router and added a few routes, as well as i18n-next to support multiple languages. I used a few translatable keys and made sure the layout has RTL support.
+I built the app from scratch, without using any starter templates. I installed React Router and added a few routes, as well as i18n-next to support multiple languages. I used a few translatable keys and made sure the layout has RTL support.
 
 I used RTKQ to create an API slice to fetch the reservations list directly from the included Github gist. Finally, I used Tailwind CSS for all the styles.
 
